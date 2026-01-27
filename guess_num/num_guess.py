@@ -1,7 +1,7 @@
-
+#!/usr/bin/python
 # guessing game
 
-import contextlib
+
 
 
 secret_number = 4
@@ -33,16 +33,16 @@ for word in words:
         print(f"'{word}' has no vowels.")
 
 
-health = 5
-attack = 5
+HEALTH = 5
+ATTACK = 5
 
-if health == attack:
+if HEALTH == ATTACK:
     print("Damage done")
-    health -= attack
-    print(f"{health}")
+    HEALTH -= ATTACK
+    print(f"{HEALTH}")
 else:
     print("No damage done")
-    print(f"{health}")
+    print(f"{HEALTH}")
 
 
 languages = ['English', 'Spanish', 'French']
@@ -58,7 +58,7 @@ for index, number in enumerate(numbers, 0):
 players = ['Cat', 'Human', 'Ape']
 ids = [1, 2, 3, 4]
 
-for name, id in zip(players, ids):
+for name, player_id in zip(players, ids):
     print(f'Name: {name}')
     print(f"ID: {id}")
 
