@@ -84,7 +84,7 @@ class Book:
     def __len__(self):
         return self.pages
 
-    def __str__(self)
+    def __str__(self):
         return f"'{self.title}' has {self.pages} pages."
 
     def __eq__(self, other):
