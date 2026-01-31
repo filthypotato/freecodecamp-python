@@ -101,3 +101,27 @@ print(book1 == book2) # True
 
 
 print(str(book1))
+
+
+
+
+class Malware:
+    def __init__(self, name, type_of):
+        self.name = name
+        self.type_of = type_of
+
+    def task(self):
+        return f"Time to do some tasks '{self.name}'"
+
+    def notes(self):
+        return f"This is what we know about '{self.name}' and its type is '{self.type_of}'"
+
+
+mal1 = Malware("Wannacry", "Worm/Ransomware")
+mal2 = Malware("Stuxnet", "Worm")
+
+print(mal1.task())
+
+print(mal1)
+print(mal2)
+
